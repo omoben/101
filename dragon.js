@@ -9,8 +9,11 @@ const server = express();
 
 //1. Test
 server.get("/test", (request, response) => {
+response.send({message:"We Made It"})
 
-
+})
+server.get('/', (request, response) => {
+response.send({message:"We Made It Again"})
 
 })
 
